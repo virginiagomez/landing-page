@@ -1,0 +1,73 @@
+body {
+  font-size: 16px;
+  margin: 0%;
+}
+h1{
+  font-size: 44px;
+  padding: 100px 50px 0px 30px;
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 50px 0px 30px;
+}
+.containerDad{
+  width: 100%;
+  min-height: 100vh;
+}
+.firstContainer{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.containerImg{
+  margin: 30px 26px 16px 32px;
+}
+.imgLogo{
+  width: 160px;
+  height: 26px;
+}
+.containerButtonNav{
+  margin: 30px 32px 16px 30px;
+}
+.buttonNav {
+  cursor: pointer;
+  color: #fc79b7;
+  padding: 8px 25px;
+  background-color: white;
+  border: 1px solid #fc79b7;
+  border-radius: 60px;
+}
+.secondContainer{
+  width: 100%;
+  min-height: 100vh;
+  
+}
+.containerButtonCont{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.buttonCont {
+  cursor: pointer;
+  color: white;
+  padding: 12px 55px;
+  background-color: #fd53c0;
+  border: 1px solid #fd53c0;
+  border-radius: 60px;
+  font-size: 14px;
+  box-shadow: 6px 8px 12px #e3e7e9;
+}
+.thirdContainer{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+.imgScreen{
+  width: 80%;
+  height: 80%;
+}
