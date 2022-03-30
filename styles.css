@@ -1,16 +1,126 @@
+@font-face{
+  font-family: 'Poppins';
+  src: url(./assets/Fonts/Poppins-Bold.ttf);
+}
+@font-face{
+  font-family:'OpenRegular' ;
+  src: url(./assets/Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'OpenSemiBold';
+  src: url(./assets/Fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family:'OpenBold';
+  src: url(./assets/Fonts/OpenSans-Bold.ttf);
+}
 body {
   font-size: 16px;
   margin: 0%;
 }
 h1{
+  font-size: 40px;
+  padding: 100px 50px 0px 30px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+@media (min-width: 992px){
+  h1{
+    font-size: 45px;
+    margin-bottom: 1rem;
+  }
+}
+h2{
+  height: 20%;
+  font-size: 70px;
+  text-align: center;
+  font-family: 'OpenBold';
+}
+@media (min-width: 992px){
+  h2{
+    height: 40%;
+    font-size: 90px;
+  }
+}
+h3{
+  font-size: 16px;
+  text-align: center;
+  color: #7f8992;
+  font-family: 'OpenRegular';
+}
+@media (min-width: 992px){
+  h3{
+    font-size: 22px;
+  }
+}
+h4{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 50px 0px 30px;
+  font-family: 'Poppins';
+  margin-bottom: 0px;
+}
+@media (min-width: 992px){
+  h4{
+    padding-left: 6rem;
+    text-align: justify;
+    font-size: 35px;
+    padding-top: 5rem;
+  }  
+}
+h5{
   font-size: 44px;
   padding: 100px 50px 0px 30px;
   text-align: center;
+  font-family: 'Poppins'; 
+}
+h6{
+  color: white;
+  font-size: 30px;
+  margin-left: 2rem;
+  margin-bottom: 0px;
+  font-family: 'Poppins';
+}
+.h4Flowing{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 50px 0px 30px;
+  font-family: 'Poppins';
+  margin-bottom: 0px;
+}
+@media (min-width: 992px){
+  .h4Flowing{
+    font-size: 35px;
+    padding: 0px;
+    margin-left: 22px;
+}
 }
 p{
   text-align: center;
   font-size: 24px;
   padding: 12px 50px 0px 30px;
+  font-family:'OpenRegular';
+}
+@media(min-width: 992px){
+  p{
+  font-size: 18px;
+  padding: 0px 28rem 0px 28rem;
+  margin: 0px;
+  }
+}
+.pwhite{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 0%;
+  padding-top: 0%;
+  font-family:'OpenRegular';
+  line-height: 1.6;
+}
+@media (min-width: 992px){
+  .pwhite{
+    font-size: 10px;
+}
 }
 .containerDad{
   width: 100%;
@@ -22,52 +132,336 @@ p{
   display: flex;
   justify-content: space-between;
 }
+@media(min-width: 992px){
+  .firstContainer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  }
+}
 .containerImg{
   margin: 30px 26px 16px 32px;
 }
 .imgLogo{
   width: 160px;
   height: 26px;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+@media(min-width: 992px){
+  .imgLogo{
+  width:230px ;
+  height: 36px;
+  }
 }
 .containerButtonNav{
   margin: 30px 32px 16px 30px;
 }
+@media(min-width: 992px){
+  .containerButtonNav {
+  padding-right:45px ;
+  }
+}
 .buttonNav {
   cursor: pointer;
-  color: #fc79b7;
+  color: hsl(322, 100%, 66%);
   padding: 8px 25px;
   background-color: white;
-  border: 1px solid #fc79b7;
+  border: 1px solid hsl(322, 100%, 66%);
   border-radius: 60px;
+  font-family: 'OpenRegular';
+}
+.buttonNav:active {
+  color: hsl(321, 100%, 78%);
+ background-color: transparent;
+ border: 1px solid hsl(321, 100%, 78%);
 }
 .secondContainer{
   width: 100%;
-  min-height: 100vh;
-  
+  min-height: 85vh;  
+}
+@media (min-width: 992px){
+  .secondContainer{
+    min-height: 50vh;
+    padding-bottom: 8rem;
+    padding-left: 0px;
+  }
 }
 .containerButtonCont{
   margin-top: 60px;
   display: flex;
   justify-content: center;
 }
+@media (min-width: 992px){
+  .containerButtonCont{
+    margin-top: 3rem;
+  }
+}
 .buttonCont {
   cursor: pointer;
   color: white;
-  padding: 12px 55px;
-  background-color: #fd53c0;
-  border: 1px solid #fd53c0;
+  padding: 16px 50px;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
   border-radius: 60px;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 6px 8px 12px #e3e7e9;
+  font-family: 'OpenBold';
+}
+.buttonCont:active {
+  color: white;
+ background-color: hsl(321, 100%, 78%);
+ border: 1px solid hsl(321, 100%, 78%);
+}
+@media(min-width: 992px){
+  .buttonCont{
+  font-size: 19px;
+  padding: 20px 90px;
+  }
 }
 .thirdContainer{
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   margin-top: 25%;
+}
+@media(min-width: 992px){
+  .thirdContainer{
+  margin-top: 7rem;
+  }
 }
 .imgScreen{
   width: 80%;
   height: 80%;
 }
+@media(min-width: 992px){
+  .imgScreen{
+    width: 70%;
+    height: 70%;
+  }
+}
+.fourthContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2px;
+}
+@media(min-width: 992px){
+  .fourthContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.communitiesContainer{
+  width: 40%;
+  height: 60%;
+  padding-bottom: 6rem;
+}
+@media(min-width: 992px){
+  .communitiesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5rem;
+    padding-left: 16rem;
+  }
+}
+.messagesContainer{
+  width: 40%;
+  height: 60%;
+}
+@media(min-width: 992px){
+  .messagesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    padding-left: 10rem;
+  }
+}
+.icon{
+  width: 15%;
+  height: 18%;
+  margin-left: 1rem;
+}
+@media(min-width: 992px){
+  .icon{
+    width: 8%;
+    height: 18%;
+  }
+}
+.fifthseventhcontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  width: 100%;
+  background-color:#f6fbff;
+}
+@media(min-width: 992px){
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+.textotogethers{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imgusers{
+  width: 70%;
+  height: 60%;
+  background-color: #f6fbff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 5.5rem;
+}
+@media(min-width: 992px){
+  .imgusers{
+    padding: 0px;
+  }
+}
+.togetherusers{
+  font-size: 20px;
+  background-color: #f6fbff ;
+  text-align: center;
+  padding-bottom: 7rem;
+  margin-top: 0px;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 0px;
+}
+@media(min-width: 992px){
+  .togetherusers{
+    text-align: justify;
+    font-size: 14px;
+    width: 50%;
+    padding-left: 4.5rem;
+    padding-top: 1rem;
+    padding-right: 0px;
+  }
+}
+.sixthContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40%;
+  padding-bottom: 7rem;
+}
+@media(min-width: 992px){
+  .sixthContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+}
+.conversationContainer{
+  width: 70%;
+}
+.textConversation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width: 992px){
+  .textConversation{
+    width: 100%;
+  }
+}
+.imgConversations{
+  width: 100%;
+  min-height: 50vh;
+}
+@media(min-width: 992px){
+  .imgConversations{
+    width: 80%;
+    min-height: 35vh;
+    padding-left: 6rem;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
+  }
+}
+.conversation{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.4;
+}
+@media(min-width: 992px){
+  .conversation{
+    text-align: justify;
+    font-size: 15px;
+    width: 65%;
+    padding-left: 10.5rem;
+    margin-left: 0px;
+  }
+}
+.seventhContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  width: 89%;
+  height: 4rem;
+  font-size: 40px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-family:'OpenRegular';
+}
+.buttonSub{
+  width: 40%;
+  height: 4rem;
+  color: white;
+  font-size: 20px;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 8px;
+  margin-left: 20rem;
+  font-family: 'OpenBold';
+}
+.buttonSub:active {
+  color: white;
+ background-color: hsl(321, 100%, 78%);
+ border: 1px solid hsl(321, 100%, 78%);
+}
+.footer{
+  width: 100%;
+  min-height: 80vh;
+  background-color: #00252e;
+  letter-spacing: 1px;
+  padding-top: 0px;
+}
+
+.logoTwitter{
+  width: 6%;
+  height: 6%;
+  padding-left: 2rem;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 2rem
+  }
